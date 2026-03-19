@@ -1,0 +1,7 @@
+void main() {
+  var numbers = [1,2,3,4];
+
+  var doubleNum = numbers.map((n) => n * 2).toList();
+
+  print(doubleNum);
+}
