@@ -21,10 +21,10 @@ print(x??"values not asinine ");
   int? bc ;
   bc ??=112;//bc if null hole default value 112 print hobe
   print(bc);
-// !----
+// !---- fhaka nai bujai
 String? b;
 // print(b!.length);// run time error
-String? xx='Zakaria';
+String? xx;
  print(xx!.length);
 
 }

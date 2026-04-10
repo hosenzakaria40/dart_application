@@ -1,4 +1,6 @@
-class otg {
+
+////class name upper camel case hoi sob so-moi-example---FullName
+class Otg {
   Addion() {
     int a, b;
     a = 220;
@@ -8,7 +10,7 @@ class otg {
   }
 }
 
-class n extends otg {
+class n extends Otg {
   var obj = 22;
 
   sum() {

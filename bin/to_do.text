@@ -5,3 +5,30 @@ void main() {
 
   print(doubleNum);
 }
+
+//////////////buji nai
+abstract class UserRepository {
+  void getUser();
+}
+class ApiUserRepository extends UserRepository {
+  @override
+  void getUser() {
+    print("Fetching user from API");
+  }
+}
+class LocalUserRepository extends UserRepository {
+  @override
+  void getUser() {
+    print("Fetching user from Local DB");
+  }
+}
+void main() {
+  UserRepository repo;///buji nai
+  ///
+
+  repo = ApiUserRepository();
+  repo.getUser(); // API call
+
+  repo = LocalUserRepository();
+  repo.getUser(); // Local DB call
+}

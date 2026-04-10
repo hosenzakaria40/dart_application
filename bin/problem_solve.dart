@@ -38,17 +38,28 @@
 //   print(isAdult(20));
 // }
 // String isAdult(int age) => age>=18?  'Fuck you israel':'I love Iran';
-class Vehicle{
-  String? make, model;
-  Vehicle(this.make, this.model);
-  void drive()=> print("Driving the $make $model");
-}
-class Car extends Vehicle{
-  Car(super.make, super.model);
-  car.Vehicle();
-  int numberOfDoors = 4;
+class Thermostat{
+  Thermostat(this._temperature);
+  double? _temperature;
+  double? get celsius=>_temperature;
+  set celsius(double value){
+  if(value >= -30 && value <=50){
+    _temperature=value;
+    print('Temperature $value c');
+  }else{
+    print("Warning: Temperature out of range");
+  }
+  }
+  double? get fahrenheit{
+    return  _temperature = (celsius! * 9 / 5) + 32;
+
+  }
 }
 void main(){
-  var myCar = Car('Toyota', 'Corolla');
-  myCar.drive();
+  Thermostat ob =Thermostat(30.00);
+  // print(ob.celsius);
+  ob.celsius =50;
+  print('Celsius: ${ob.celsius}'); // 30.0
+  ob.celsius = 50; // Temperature set to 50°C
+  print('Fahrenheit: ${ob.fahrenheit}'); // 122.0
 }

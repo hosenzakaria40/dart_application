@@ -48,10 +48,3 @@
 //   obj.Function1();
 //   obj.Subtrection();
 // }
-void main(){
-  var list = ['jakaria', 'Mr.king', 'Rakib', 'Nilhaz', 'Souyaib', 'Hasen'];
-  print(list);
-  //  length
-
-  print(List.empty());
-}
